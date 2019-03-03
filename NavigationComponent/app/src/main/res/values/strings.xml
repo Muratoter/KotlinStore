@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NavigationComponent</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="HOME">Home</string>
+    <string name="NOTIFICATIONS">Notifications</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/homeFragment">
+
+    <fragment android:id="@+id/homeFragment"
+              android:name="com.moter.navigationcomponent.fragments.HomeFragment"
+              android:label="@string/HOME"
+              tools:layout="@layout/fragment_home">
+        <argument
+                android:name="title"
+                android:defaultValue="@string/HOME"/>
+    </fragment>
+
+    <fragment android:id="@+id/notificationsFragment"
+              android:name="com.moter.navigationcomponent.fragments.notifications.NotificationsFragment"
+              android:label="@string/NOTIFICATIONS"
+              tools:layout="@layout/fragment_notifications">
+        <argument
+                android:name="title"
+                android:defaultValue="@string/NOTIFICATIONS"/>
+        <action android:id="@+id/action_notificationsFragment_to_notificationDetailFragment"
+                app:destination="@id/notificationDetailFragment"
+                app:enterAnim="@anim/nav_default_pop_enter_anim"
+                app:exitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment android:id="@+id/notificationDetailFragment"
+              android:name="com.moter.navigationcomponent.fragments.notifications.NotificationDetailFragment"
+              android:label="Notification Detail"
+              tools:layout="@layout/fragment_notification_detail"/>
+
+    <activity android:id="@+id/mainActivity" android:name="com.moter.navigationcomponent.MainActivity"
+              android:label="activity_main" tools:layout="@layout/activity_main"/>
+
+</navigation>
