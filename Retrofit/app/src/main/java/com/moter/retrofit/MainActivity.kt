@@ -1,5 +1,6 @@
 package com.moter.retrofit
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -13,7 +14,8 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), PostAdapter.ItemListener {
+
     lateinit var postService: PostService
     lateinit var mDisposable: CompositeDisposable
 
@@ -40,11 +42,25 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun displayPost(pList: List<Post>) {
-        val postAdapter = PostAdapter(this, pList)
+        val postAdapter = PostAdapter(applicationContext, pList, this)
         rvPostList.adapter = postAdapter
     }
 
     private fun fetchError(throwable: Throwable) {
         Log.e("MainActivity", "fetch error: ${throwable.message}")
     }
+
+    override fun itemClicked(post: Post) {
+
+        val detailIntent = Intent(this, DetailActivity::class.java)
+        detailIntent.putExtra("post", post)
+        startActivity(detailIntent)
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mDisposable.clear()
+    }
+
 }
