@@ -4,10 +4,12 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.moter.retrofitroomrx"
+        applicationId "com.moter.room"
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 1
@@ -25,7 +27,17 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
-    implementation 'androidx.core:core-ktx:1.1.0-alpha04'
+    implementation 'androidx.core:core-ktx:1.1.0-alpha05'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+
+    //room components
+    implementation 'androidx.room:room-runtime:2.1.0-alpha06'
+    kapt 'androidx.room:room-compiler:2.1.0-alpha06'
+    //lifecycle components
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0-alpha03'
+    kapt 'androidx.lifecycle:lifecycle-compiler:2.1.0-alpha03'
+
+    //coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.1'
 
 }
