@@ -11,15 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97d7ce4-1e69-44a6-9548-4857dd921f8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Room/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Room/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/Task.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/Task.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/TaskDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/TaskDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/TaskDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/TaskDataSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/TaskDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/TaskDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/TaskRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/TaskRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/TaskViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Room/app/src/main/java/com/moter/room/TaskViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Firestore/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Firestore/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Firestore/app/src/main/java/com/moter/firestore/db/firestore/DatabaseRepo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Firestore/app/src/main/java/com/moter/firestore/db/firestore/References.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Firestore/app/src/main/java/com/moter/firestore/entity/Task.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,10 +39,11 @@
     <session id="-1229957262">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -96,14 +93,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="myGradleHomes">
-      <map />
-    </option>
-    <option name="myGradleVersions">
-      <map />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -157,8 +146,23 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Mvvm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mvvm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mvvm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mvvm" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,14 +327,13 @@
     <frame x="-1" y="0" width="1368" height="744" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3348485" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.34015152" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.61769617" />
       <window_info anchor="bottom" id="TODO" order="2" />
@@ -340,14 +343,15 @@
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32888147" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
-      <window_info anchor="right" id="Flutter Inspector" />
-      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="bottom" id="Flutter Performance" order="9" side_tool="true" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Preview" order="4" weight="0.32954547" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Flutter Inspector" order="6" />
+      <window_info anchor="right" id="Flutter Outline" order="7" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
