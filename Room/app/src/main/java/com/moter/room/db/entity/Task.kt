@@ -1,4 +1,4 @@
-package com.moter.room
+package com.moter.room.db.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -7,11 +7,13 @@ import java.util.*
 
 @Entity(tableName = "tasks")
 data class Task(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo
-    val id: String,
+    var taskId: Int?,
     @ColumnInfo
-    val name: String,
+    var name: String,
     @ColumnInfo
-    val date: Date
-)
+    var date: Date?
+) {
+    constructor() : this(null, "", null)
+}
